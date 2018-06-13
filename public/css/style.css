@@ -1,0 +1,65 @@
+h1, h3
+{
+    text-align:center;
+    margin: 0 0 0 0;
+}
+h1
+{
+    color: #ff9800;
+    margin-bottom: 2%;
+}
+h3
+{
+    background-color:#ff9800;
+    color:white;
+    font-size:0.9em;
+    margin-bottom:0px;
+}
+.news p
+{
+    background-color:#FFF;
+    margin: auto;
+}
+.news
+{
+    width:70%;
+    margin: auto;
+    margin-bottom: 1%;
+    border: 1px solid #ff9800;
+}
+
+a
+{
+    text-decoration: none;
+    color: blue;
+}
+input#author
+{
+    width: 300px;
+}
+textarea#comment
+{
+    width: 300px;
+    height: 150px;
+}
+.author
+{
+    background-color: #ffc107;
+    margin: 0 0 0 0;
+}
+.comments
+{
+    border: 1px solid #ccc;
+    width: 25%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.comment
+{
+    margin-left: 1%;
+}
+.form
+{
+    margin-left: 3%;
+    margin-top: 3%;
+}

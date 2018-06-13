@@ -1,0 +1,11 @@
+mvc TP :
+  ✔ index -> créer un switch entre les billets et un billet seul @done (18-05-30 17:16)
+  ✔ remettre en ordre les controllers et models @done (18-05-30 17:16)
+  ✔ faire le namespace @done (18-05-30 19:05)
+  ☐ créer le lien pour modifier un commentaire -> vers l'index plutôt que commentView (page postView.php)
+  ☐ créer le code pour modifier un commentaire sur la page d'index
+  ☐ créer le code pour modifier un commentaire sur le controller
+  ☐ sauvegarder la bdd
+  ☐ faire des tests
+  ☐ envoyer l'exercice en ligne
+  ☐ voir ce post : https://openclassrooms.com/forum/sujet/cours-architecture-mvc-php
