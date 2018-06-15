@@ -1,4 +1,5 @@
-*.sublime-workspace
-.todo
-.sublime-project
+
 vieux_code.php
+todo.todo
+TP_MVC.sublime-project
+*.sublime-workspace
