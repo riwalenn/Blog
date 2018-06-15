@@ -2,14 +2,22 @@
 namespace TP_MVC\Blog\Model;
 //echo "Modèle CommentManager is ok !<br />";
 
-require_once('manager.php');
+require_once('Manager.php');
 class CommentManager extends Manager
 {
     public function listComments($postId)
     {
         $db = $this->dbConnect();
-        $comments = $db->prepare('SELECT id, author, comment, DATE_FORMAT(date_comment, \'%d/%m/%Y à %Hh%imin%ss\') AS date_comment_fr FROM comments WHERE post_id = ? ORDER BY date_comment DESC');
-        $comments->execute(array($postId));
+        
+        if(isset($_GET['page'])){
+            $comments = $db->prepare('SELECT id, author, comment, DATE_FORMAT(date_comment, \'%d/%m/%Y à %Hh%imin%ss\' ) AS date_comment_fr FROM comments WHERE post_id = ? ORDER BY date_comment DESC LIMIT '.(($_GET['page']-1)*5).',5') or die(print_r($db->errorInfo()));
+            $comments->execute(array($postId));
+        }else{
+            $comments = $db->prepare('SELECT id, author, comment, DATE_FORMAT(date_comment, \'%d/%m/%Y à %Hh%imin%ss\') AS date_comment_fr FROM comments WHERE post_id = ? ORDER BY date_comment DESC LIMIT 0,5');
+            
+            $comments->execute(array($postId));
+        }
+
 
         return $comments;
     }
@@ -42,5 +50,19 @@ class CommentManager extends Manager
 
         ));
         return $editComment;
+    }
+
+    public function getNbPagesC(){
+        $db = $this->dbConnect();
+       if(isset($_GET['id'])){
+         $selectCount = $db->prepare('SELECT COUNT(*) AS nb_comments FROM comments WHERE post_id = :id');
+         $selectCount->execute(array('id' => $_GET['id']));
+        $countC = $selectCount->fetch();
+        return $countC['nb_comments']/5;
+       }else{
+        echo 'error';
+       }
+
+        
     }
 }

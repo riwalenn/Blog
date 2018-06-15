@@ -12,7 +12,7 @@ function listPosts()
     $posts = $postManager->getPosts();
     $nbPages = $postManager->getNbPages(); 
 
-    require ('\view\frontend\listPostsView.php');
+    require ('view\frontend\listPostsView.php');
 }
 
 //Controller that assumes displaying one post and its comments
@@ -20,11 +20,13 @@ function post()
 {
     $postManager = new \TP_MVC\Blog\Model\PostManager();
     $commentManager = new \TP_MVC\Blog\Model\CommentManager();
+    
+    $nbPagesC = $commentManager->getNbPagesC();
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->listComments($_GET['id']);
 
-    require ('\view\frontend\postView.php');
+    require ('view\frontend\postView.php');
 }
 
 
@@ -35,7 +37,7 @@ function comment()
 
     $post = $postManager->getPost($_GET['id']);
     $viewComment = $commentManager->viewComment($_GET['idC']);
-    require ('\view\frontend\commentView.php');
+    require ('view\frontend\commentView.php');
 }
 
 //Controller able to post comments on each post

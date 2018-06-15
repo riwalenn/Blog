@@ -1,7 +1,7 @@
 <?php
 namespace TP_MVC\Blog\Model;
 
-require_once('manager.php');
+require_once('Manager.php');
 class PostManager extends Manager
 {
     public function getPosts()

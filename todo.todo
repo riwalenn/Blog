@@ -2,10 +2,19 @@ mvc TP :
   ✔ index -> créer un switch entre les billets et un billet seul @done (18-05-30 17:16)
   ✔ remettre en ordre les controllers et models @done (18-05-30 17:16)
   ✔ faire le namespace @done (18-05-30 19:05)
-  ☐ créer le lien pour modifier un commentaire -> vers l'index plutôt que commentView (page postView.php)
-  ☐ créer le code pour modifier un commentaire sur la page d'index
-  ☐ créer le code pour modifier un commentaire sur le controller
-  ☐ sauvegarder la bdd
-  ☐ faire des tests
-  ☐ envoyer l'exercice en ligne
-  ☐ voir ce post : https://openclassrooms.com/forum/sujet/cours-architecture-mvc-php
+  ✔ créer le lien pour modifier un commentaire -> vers l'index plutôt que commentView (page postView.php) @done (18-06-14 22:00)
+  ✔ créer le code pour modifier un commentaire sur la page d'index @done (18-06-14 22:00)
+  ✔ créer le code pour modifier un commentaire sur le controller @done (18-06-14 22:00)
+  ✔ sauvegarder la bdd @done (18-06-14 22:01)
+  ✔ faire des tests @done (18-06-14 22:01)
+  ✔ envoyer l'exercice en ligne @done (18-06-14 22:01)
+  ✔ créer une pagination pour les commentaires @done (18-06-15 11:45)
+  Modifier les pages suivantes :
+    ✔ model/commentManager -> créer une function (LIMIT 0,5) @done (18-06-15 11:26)
+    ✔ tester la page @done (18-06-15 11:45)
+    ✔ controller/frontend -> ajouter la fonction @done (18-06-15 11:29)
+    ✔ tester la page @done (18-06-15 11:45)
+    ✔ view/frontend/postView -> créer le code de pagination dans la page @done (18-06-15 11:45)
+    ✔ tester la page @done (18-06-15 12:14)
+    ✔ index.php -> créer le code pour la pagination @done (18-06-15 11:45)
+    ✔ tester la page @done (18-06-15 11:45)

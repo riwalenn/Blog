@@ -26,8 +26,20 @@
             <p class="comment"><?= nl2br(htmlspecialchars($comment['comment'])) ?> (<a href="index.php?action=viewComment&amp;idC=<?= $comment['id'] ?>&amp;id=<?= $post['id'] ?>">modifier</a>)</p>
     <?php
     }
+    $comments->closeCursor();
     ?>
 </div>
+    <!-- Affiche le nombre de pages de commentaires à afficher (par convention, une page affiche 5 commentaires) -->
+    <p>Page :
+        <?php for($looper = 0; $looper <= $nbPagesC; $looper++){
+?>
+    <a href="index.php?action=Viewpost&page=<?= $looper+1 ?>&amp;id=<?= $post['id'] ?>">
+        <?= $looper+1 ?>
+    </a>
+<?php
+    }
+?>
+    </p>
 <div class="form">
     <form action="index.php?action=addComment&amp;id=<?= $post['id'] ?>" method="post">
         <div>

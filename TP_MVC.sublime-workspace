@@ -307,25 +307,7 @@
 			"file": "todo.todo",
 			"settings":
 			{
-				"buffer_size": 611,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "view/frontend/listPostsView.php",
-			"settings":
-			{
-				"buffer_size": 1063,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "model/postManager.php",
-			"settings":
-			{
-				"buffer_size": 1232,
+				"buffer_size": 983,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -383,14 +365,14 @@
 	},
 	"expanded_folders":
 	[
-		"/F/wamp64/www/TP_MVC/blog",
-		"/F/wamp64/www/TP_MVC/blog/controller",
-		"/F/wamp64/www/TP_MVC/blog/model",
-		"/F/wamp64/www/TP_MVC/blog/view",
-		"/F/wamp64/www/TP_MVC/blog/view/frontend"
+		"/F/wamp64/www/TP_MVC/blog/Blog",
+		"/F/wamp64/www/TP_MVC/blog/Blog/view",
+		"/F/wamp64/www/TP_MVC/blog/Blog/view/frontend"
 	],
 	"file_history":
 	[
+		"/F/wamp64/www/TP_MVC/blog/Blog/view/frontend/listPostsView.php",
+		"/F/wamp64/www/TP_MVC/blog/Blog/model/postManager.php",
 		"/F/wamp64/www/TP_MVC/blog/view/frontend/commentView.php",
 		"/F/wamp64/www/TP_MVC/blog/view/frontend/postView.php",
 		"/F/wamp64/www/TP_MVC/blog/model/postManager.php",
@@ -516,13 +498,11 @@
 		"/F/wamp64/www/TP-PHP/minichat/chat.php",
 		"/F/wamp64/www/TP-PHP/espace_membres/connexion_bdd",
 		"/F/wamp64/www/TP-PHP/eleve3/tpMiniChat.php",
-		"/F/wamp64/www/TP-PHP/espace_membres/connexion",
-		"/F/wamp64/www/TP-PHP/espace_membres/deconnexion.ph",
-		"/F/wamp64/www/coursPHP/images/images.php"
+		"/F/wamp64/www/TP-PHP/espace_membres/connexion"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -544,7 +524,7 @@
 		"replace_history":
 		[
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -553,7 +533,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -562,87 +542,25 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 611,
+						"buffer_size": 983,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								611,
-								611
+								805,
+								805
 							]
 						],
 						"settings":
 						{
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"plain_tasks_remain_time_phantoms":
 							[
 							],
 							"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "view/frontend/listPostsView.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1063,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								970,
-								970
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "model/postManager.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								900,
-								900
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,

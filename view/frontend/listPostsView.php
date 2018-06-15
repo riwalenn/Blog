@@ -23,7 +23,7 @@
     }
     $posts->closeCursor();
     ?>
- <!-- Affiche le nombre de pages de commentaires à afficher (par convention, une page affiche 5 articles) -->
+ <!-- Affiche le nombre de pages d'articles à afficher (par convention, une page affiche 5 articles) -->
     <p>Page :
         <?php for($looper = 0; $looper <= $nbPages; $looper++){
 ?>
